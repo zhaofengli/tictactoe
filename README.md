@@ -52,9 +52,9 @@ To check if the game has ended, use the `isEnded()` method:
 ```php
 if ( $game->isEnded() ) {
 	$winner = $game->getWinner();
-	if ( $winner == TICTACTOE_PLAYER_A ) {
+	if ( $winner == $game::PLAYER_A ) {
 		echo "Player A wins!";
-	} elseif ( $winner == TICTACTOE_PLAYER_B ) {
+	} elseif ( $winner == $game::PLAYER_B ) {
 		echo "Player B wins!";
 	} else {
 		echo "It's a tie.";
